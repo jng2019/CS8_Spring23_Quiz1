@@ -1,0 +1,3 @@
+C:/Users/jonat/Downloads/CS8_Spring23_Quiz1/CS8_Spring23_Quiz1/cmake-build-debug/CMakeFiles/CS8_Spring23_Quiz1.dir
+C:/Users/jonat/Downloads/CS8_Spring23_Quiz1/CS8_Spring23_Quiz1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jonat/Downloads/CS8_Spring23_Quiz1/CS8_Spring23_Quiz1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
