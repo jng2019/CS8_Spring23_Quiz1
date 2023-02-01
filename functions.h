@@ -6,6 +6,8 @@
 #define CS8_SPRING23_QUIZ1_FUNCTIONS_H
 #include "string"
 #include "vector.h"
+#include <vector>
+
 
 //// Why are things so red in here?
 
@@ -13,24 +15,25 @@
 
 /// Function is broken, it should remove punctuation from each word.
 /// Function also needs to sort each list of words alphabetically
-vector<vector<std::string>> generateIndex(const std::string& filename);
+std::vector<std::vector<std::string>> generateIndex(const std::string& filename);
 
 ///Function is broken ?????
 bool openFile(std::ifstream &in, const std::string& filename);
 
 ///Need a driver for this function
-vector<std::string> getIndex(char c, const vector<vector<std::string>>& inde);
+#include <vector>
+std::vector<std::string> getIndex(char c, const std::vector<std::vector<std::string>>& inde);
 
 
 /// These function are working as they should!!
 
 /// Do we really want a print function to ouput our index? No!!
-void print(const vector<vector<std::string>>& index);
-bool contains(const vector<std::string>& vector, const std::string& string);
+void print(const std::vector<std::vector<std::string>>& index);
+bool contains(const std::vector<std::string>& vector, const std::string& string);
 std::string tolower(const std::string& string);
-void sort(vector<std::string>& vector);
+void sort(std::vector<std::string>& vector);
 std::string removePunctuation(const std::string& string);
 std::string getFileContent(const std::string& filename);
 int charToIndex(char c);
-vector<std::string> split(const std::string& string, const std::string& delimiter);
+std::vector<std::string> split(const std::string& string, const std::string& delimiter);
 #endif //CS8_SPRING23_QUIZ1_FUNCTIONS_H

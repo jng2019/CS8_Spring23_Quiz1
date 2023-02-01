@@ -5,11 +5,11 @@
 #include <fstream>
 #include "functions.h"
 
-vector<vector<std::string>> generateIndex(const std::string& data)
+std::vector<std::vector<std::string>> generateIndex(const std::string& data)
 {
-    vector<std::string> strings = split(data, " ");
+    std::vector<std::string> strings = split(data, " ");
 
-    vector<vector<std::string>> index(26, vector<std::string>());
+    std::vector<std::vector<std::string>> index(26, std::vector<std::string>());
     for(int i = 0; i < strings.size(); i++)
     {
         std::string t = strings.at(i);
@@ -31,7 +31,7 @@ vector<std::string> getIndex(char c, const vector<vector<std::string>>& index)
 {
     return index[charToIndex(c)];
 }
-void print(const vector<vector<std::string>>& index)
+void print(const std::vector<std::vector<std::string>>& index)
 {
     for(int i=0; i < index.size(); i++)
     {
@@ -44,7 +44,7 @@ void print(const vector<vector<std::string>>& index)
     }
 }
 
-bool contains(const vector<std::string>& vector, const std::string& string)
+bool contains(const std::vector<std::string>& vector, const std::string& string)
 {
     for(int i = 0; i < vector.size(); i++) {
         std::string t = vector.at(i);
@@ -84,9 +84,9 @@ std::string getFileContent(const std::string &filename)
     return s;
 }
 
-vector<std::string> split(const std::string& string, const std::string& delimiter)
+std::vector<std::string> split(const std::string& string, const std::string& delimiter)
 {
-    vector<std::string> v;
+    std::vector<std::string> v;
     std::string s = string;
     while(s.size() > 0)
     {

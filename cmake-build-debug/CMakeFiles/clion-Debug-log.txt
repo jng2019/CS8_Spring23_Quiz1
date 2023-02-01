@@ -1,4 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\jonat\Downloads\CS8_Spring23_Quiz1\CS8_Spring23_Quiz1 -B C:\Users\jonat\Downloads\CS8_Spring23_Quiz1\CS8_Spring23_Quiz1\cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/jonat/Downloads/CS8_Spring23_Quiz1/CS8_Spring23_Quiz1/cmake-build-debug

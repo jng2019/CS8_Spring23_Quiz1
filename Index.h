@@ -10,12 +10,12 @@
 class Index
 {
 private:
-    vector<vector<std::string>> data;
+    std::vector<std::vector<std::string>> data;
 public:
     Index(const std::string &filename);
     void addWord(const std::string &word);
     friend std::ostream & operator << (std::ostream &out, const Index &c);
-    vector<std::string> operator[](unsigned int index);
+    std::vector<std::string> operator[](unsigned int index);
 };
 
 

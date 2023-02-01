@@ -21,6 +21,6 @@ std::ostream &operator<<(std::ostream &out, const Index &c) {
     return out;
 }
 
-vector<std::string> Index::operator[](unsigned int index) {
+std::vector<std::string> Index::operator[](unsigned int index) {
     return data.at(index);
 }
